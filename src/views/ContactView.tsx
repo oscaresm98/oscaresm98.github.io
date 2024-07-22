@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 
 export default function ContactView() {
   return (
-    <div className="m-2 md:my-16 w-11/12 mx-auto lg:min-h-[52vh] xl:min-h-[56vh]">
+    <div className="animate-in fade-in fill-mode-both delay-150 duration-1000 m-2 md:my-16 w-11/12 mx-auto lg:min-h-[52vh] xl:min-h-[56vh]">
       <h2 className="text-4xl font-bold text-center">¿Quieres contactarme?</h2>
       <p className="text-xl text-gray-200 mt-4 text-center">Puedes hacerlo a traves de cualquiera de los siguientes canales.</p>
       
       <div className="mt-16 mb- flex flex-wrap md:space-x-10 justify-center">
         <div className="mt-4 md:mt-0">
           <Link
-            to={'/www.linkedin.com/in/oscaresm'}
+            to={'https://www.linkedin.com/in/oscaresm'}
             target="_blank"
             className="w-[200px] h-[200px] bg-[#1E293B] rounded-full flex justify-center items-center overflow-hidden"
           >
@@ -23,7 +23,7 @@ export default function ContactView() {
 
         <div className="mt-4 md:mt-0">
           <Link
-            to={'/'}
+            to={'https://github.com/oscaresm98'}
             target="_blank"
             className="w-[200px] h-[200px] bg-[#1E293B] rounded-full flex justify-center items-center overflow-hidden"
           >
@@ -36,7 +36,7 @@ export default function ContactView() {
 
         <div className="mt-4 md:mt-0">
           <Link
-            to={'/'}
+            to={'https://www.instagram.com/oscaresm98/'}
             target="_blank"
             className="w-[200px] h-[200px] bg-[#1E293B] rounded-full flex justify-center items-center overflow-hidden"
           >

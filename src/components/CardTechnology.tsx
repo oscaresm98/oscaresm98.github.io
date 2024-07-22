@@ -12,7 +12,6 @@ export default function CardTechnology({tn}: cardTechnologyProps) {
         className="w-[200px] transition-all duration-500 hover:brightness-125 hover:contrast-125"
         alt={`imagen de logo de ${tn.name}`}
       />
-      <p className="bg-[#1E293B] "></p>
       
     </div>
   )

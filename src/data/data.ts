@@ -68,39 +68,51 @@ export const dataProjects: project[] = [
       }
     ],
     image: "/img/projects/blogcafe.png",
-    url: "https://template-blog-cafe.vercel.app/",
+    url: "https://proyectoblogcafe593.netlify.app",
   },
   {
-    name: "Template: Blog de Cafe",
-    description: "Template sencilla sitio web para posteos de articulos con la tematica cafe",
+    name: "Aplicación de control de gastos",
+    description: "Aplicación interactiva para la administración de gastos personales",
     technologies: [
       {
-        name: "HTML",
-        color: "bg-[#E44D26]",
+        name: "React",
+        color: "bg-[#61DAFB]",
       },
       {
-        name: "CSS",
-        color: "bg-[#1572B6]",
+        name: "tailwindcss",
+        color: "bg-[#38BDF8]",
+      },
+      {
+        name: "Typescript",
+        color: "bg-[#3178C6]",
       }
     ],
-    image: "/img/projects/blogcafe.png",
-    url: "https://template-blog-cafe.vercel.app/",
+    image: "/img/projects/gastos1.png",
+    url: "https://presupuesto-template.netlify.app",
   },
   {
-    name: "Template: Blog de Cafe",
-    description: "Template sencilla sitio web para posteos de articulos con la tematica cafe",
+    name: "Aplicación de veterinaria",
+    description: "Aplicación para administrar y dar seguimiento a consultas de veterinaria",
     technologies: [
       {
-        name: "HTML",
-        color: "bg-[#E44D26]",
+        name: "React",
+        color: "bg-[#61DAFB]",
       },
       {
-        name: "CSS",
-        color: "bg-[#1572B6]",
+        name: "tailwindcss",
+        color: "bg-[#38BDF8]",
+      },
+      {
+        name: "Typescript",
+        color: "bg-[#3178C6]",
+      },
+      {
+        name: "Zustand",
+        color: "bg-[#433e38]",
       }
     ],
-    image: "/img/projects/blogcafe.png",
-    url: "https://template-blog-cafe.vercel.app/",
+    image: "/img/projects/veterinaria1.png",
+    url: "https://veterinaria-template.netlify.app/",
   },
   {
     name: "Template: Blog de Cafe",

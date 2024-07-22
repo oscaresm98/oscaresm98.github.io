@@ -2,7 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from "@/layouts/AppLayout";
 import HomeView from "@/views/HomeView";
 import AboutMeView from "@/views/AboutMeView";
-import ContactView from "./views/ContactView";
+import ContactView from "@/views/ContactView";
+import NotFound from "@/components/NotFound";
 
 
 export default function Router() {
@@ -13,8 +14,10 @@ export default function Router() {
           <Route path='/' element={<HomeView />} index />
           <Route path='/about' element={<AboutMeView />} />
           <Route path='/contact' element={<ContactView />} />
-          {/*<Route path='/projects/:projectId/edit' element={<EditProjectView />} /> */}
+        </Route>
 
+        <Route element={<AppLayout />}>
+          <Route path='*' element={<NotFound />} />
         </Route>
 
         {/* <Route element={<AuthLayout />}>

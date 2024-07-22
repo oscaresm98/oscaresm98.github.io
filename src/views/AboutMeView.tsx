@@ -2,8 +2,8 @@
 
 export default function AboutMeView() {
   return (
-    <>
-      <div className="grid md:grid-cols-2 my-16 gap-4 place-items-center w-11/12">
+    <div className="animate-in fade-in fill-mode-both delay-150 duration-1000">
+      <div className="grid md:grid-cols-2 md:my-16 gap-4 place-items-center w-11/12">
         <div>
           <h2 className="text-4xl font-bold text-center">Sobre <span className="text-[#19BFEC]">m&iacute;</span></h2>
           <hr className="w-24 h-1 mx-auto mt-2 bg-[#19BFEC] border-0 rounded" />
@@ -21,7 +21,7 @@ export default function AboutMeView() {
         <p className="text-xl font-semibold text-gray-300 mb-2">"El único modo de hacer un gran trabajo es amar lo que haces."</p>
         <p className="text-gray-200">- Steve Jobs</p>
     </div>
-    </>
+    </div>
   )
 }
 
