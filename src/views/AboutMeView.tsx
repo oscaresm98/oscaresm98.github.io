@@ -1,28 +1,35 @@
 import ScrollAnimation from "react-animate-on-scroll";
 
 const timeline = [
-  { year: "2019", event: "Inicio de carrera universitaria en Ingeniería en Ciencias de la Computación" },
-  { year: "2021", event: "Primer proyecto web publicado"                                                },
-  { year: "2023", event: "Pasantías en desarrollo de software"                                         },
-  { year: "2024", event: "Primeros proyectos de análisis de datos y pasantías en automatización y optimización" },
-  { year: "2025", event: "Laborando como analista de pronósticos"                                      },
+  {
+    year: "2019",
+    event:
+      "Inicio de carrera universitaria en Ingeniería en Ciencias de la Computación",
+  },
+  { year: "2021", event: "Primer proyecto web publicado" },
+  { year: "2023", event: "Pasantías en desarrollo de software" },
+  {
+    year: "2024",
+    event:
+      "Primeros proyectos de análisis de datos y pasantías en automatización y optimización",
+  },
+  { year: "2025", event: "Laborando como analista de pronósticos" },
 ];
 
 export default function AboutMeView() {
   return (
     <div className="animate-in fade-in fill-mode-both delay-150 duration-1000">
-
       {/* ── Bio ──────────────────────────────────────────── */}
       <section className="py-12 md:py-20">
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-start max-w-4xl mx-auto">
-
           {/* Encabezado izquierda */}
           <div className="md:sticky md:top-28">
             <span className="text-[10px] font-JetBrains text-[#19BFEC] tracking-widest uppercase">
               — sobre mí —
             </span>
             <h2 className="font-display text-5xl md:text-6xl font-bold mt-2 leading-tight">
-              Un poco<br />
+              Un poco
+              <br />
               <span className="text-gradient">de mí</span>
             </h2>
             <div className="mt-6 w-12 h-1 bg-[#19BFEC] rounded-full" />
@@ -31,20 +38,23 @@ export default function AboutMeView() {
           {/* Texto derecha */}
           <div className="space-y-5">
             <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
-              Soy estudiante de Ingeniería en Ciencias de la Computación con interés en el
-              cruce entre el desarrollo de software y el análisis de datos. A lo largo de
-              mi carrera he construido habilidades en múltiples áreas, desde interfaces web
-              modernas hasta pipelines de análisis y visualización de información.
+              Soy Ingeniero en Ciencias de la Computación con interés en el
+              cruce entre el desarrollo de software y el análisis de datos. A lo
+              largo de mi carrera he construido habilidades en múltiples áreas,
+              desde interfaces web modernas hasta pipelines de análisis y
+              visualización de información.
             </p>
             <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
-              En el área de datos trabajo con Python (Pandas, NumPy, Matplotlib, Seaborn) y
-              plataformas como Snowflake y Oracle DB para transformar conjuntos de datos en
-              visualizaciones e insights accionables. En desarrollo web construyo aplicaciones
-              con React, TypeScript y Django.
+              En el área de datos trabajo con Python (Pandas, NumPy, Matplotlib,
+              Seaborn) y plataformas como Snowflake y Oracle DB para transformar
+              conjuntos de datos en visualizaciones e insights accionables. En
+              desarrollo web construyo aplicaciones con React, TypeScript y
+              Django.
             </p>
             <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
-              Fuera del ámbito profesional me gustan el fútbol y el basketball, que me ayudan
-              a mantener equilibrio y trabajo en equipo tanto dentro como fuera del código.
+              Fuera del ámbito profesional me gustan el fútbol y el basketball,
+              que me ayudan a mantener equilibrio y trabajo en equipo tanto
+              dentro como fuera del código.
             </p>
           </div>
         </div>
@@ -63,7 +73,9 @@ export default function AboutMeView() {
             <span className="text-[10px] font-JetBrains text-[#19BFEC] tracking-widest uppercase">
               — historial —
             </span>
-            <h3 className="font-display text-3xl font-bold mt-2">Trayectoria</h3>
+            <h3 className="font-display text-3xl font-bold mt-2">
+              Trayectoria
+            </h3>
           </div>
 
           <ol className="relative border-l border-[#2a2a38] space-y-0">
@@ -78,7 +90,9 @@ export default function AboutMeView() {
                 </span>
 
                 {/* Evento */}
-                <p className="text-sm text-gray-300 mt-1 leading-relaxed">{item.event}</p>
+                <p className="text-sm text-gray-300 mt-1 leading-relaxed">
+                  {item.event}
+                </p>
               </li>
             ))}
           </ol>
@@ -114,7 +128,6 @@ export default function AboutMeView() {
           </blockquote>
         </section>
       </ScrollAnimation>
-
     </div>
   );
 }
