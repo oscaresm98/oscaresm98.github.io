@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Scrollbar ─────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0c0c10; }
+::-webkit-scrollbar-thumb { background: #19BFEC30; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #19BFEC70; }
+
+/* ── Grid background ───────────────────────────────── */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(25, 191, 236, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(25, 191, 236, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ── Gradient shimmer text ─────────────────────────── */
+.text-gradient {
+  background: linear-gradient(135deg, #19BFEC 0%, #93c5fd 45%, #19BFEC 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer-text 5s linear infinite;
+}
+
+/* ── Float animation (hero image) ──────────────────── */
+.float-animation {
+  animation: float-gentle 6s ease-in-out infinite;
+}
+
+/* ── Glowing orb ───────────────────────────────────── */
+.orb {
+  border-radius: 9999px;
+  filter: blur(100px);
+  pointer-events: none;
+  position: absolute;
+  animation: orb-pulse 8s ease-in-out infinite;
+}
+
+/* ── Keyframes ─────────────────────────────────────── */
+@keyframes shimmer-text {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+
+@keyframes orb-pulse {
+  0%, 100% { opacity: 0.25; transform: scale(1); }
+  50%       { opacity: 0.50; transform: scale(1.06); }
+}

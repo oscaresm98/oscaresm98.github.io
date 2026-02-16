@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "JetBrains": ['JetBrains Mono', 'sans-serif'] 
+        "JetBrains": ['JetBrains Mono', 'monospace'],
+        "display": ['Syne', 'sans-serif'],
       }
     },
   },
